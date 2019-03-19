@@ -1,6 +1,9 @@
-<!-- SUMMARY STATEMENT -->
+/* SUMMARY STATEMENT */
 
-<!-- In this lesson I learned about an alternative to inline styling.  This method of using CSS selectors is great for when I'd like to style multiple h2 elements (amongst other elements).  I can use the <style> tag and include the element to be selected and the CSS property to apply (In this case, h2 elements will be styled blue using the color property). -->
+/* In this lesson I learned about an alternative to inline styling.  This method of using CSS selectors is great
+for when I'd like to style multiple h2 elements (amongst other elements).
+I can use the <style> tag and include the element to be selected and the CSS property to apply
+(In this case, h2 elements will be styled blue using the color property). */
 
 <style>
    h2 {color: blue;}

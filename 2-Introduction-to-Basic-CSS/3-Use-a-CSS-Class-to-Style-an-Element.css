@@ -1,8 +1,8 @@
-<!-- SUMMARY STATEMENT -->
+/* SUMMARY STATEMENT */
 
-<!-- This lesson explained CSS classes and how they're a reusable style that can be added to HTML elements.
+/* This lesson explained CSS classes and how they're a reusable style that can be added to HTML elements.
 This is beneficial for when we have a section of elements that we'd like to apply the same styles to.
-We can use a class declaration instead of selected each individual element to style.-->
+We can use a class declaration instead of selected each individual element to style.*/
 
 <style>
   .red-text {
