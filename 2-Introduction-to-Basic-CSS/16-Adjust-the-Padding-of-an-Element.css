@@ -1,0 +1,43 @@
+/* SUMMARY STATEMENT */
+
+/* HTML elements are essentially just rectangles.  This means that we can control the space that surrounds each
+element with different properties.  The most important ones for doing so are padding, margin, and border.
+In this exercise, we focused on padding.  The padding is what controls the amount of space between the text and
+the border around it. */
+
+<style>
+  .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+  }
+
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 10px;
+  }
+  
+  .red-box {
+    background-color: crimson;
+    color: #fff;
+    padding: 20px;
+  }
+
+  .blue-box {
+    background-color: blue;
+    color: #fff;
+    padding: 20px;
+  }
+</style>
+<h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box blue-box">padding</h5>
+</div>
