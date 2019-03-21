@@ -1,0 +1,10 @@
+/* SUMMARY STATEMENT */
+
+/* We can also use RGB values for colors in CSS.  This involves specifying the brightness of each color with a
+number between 0 and 255. */
+
+<style>
+  body {
+    background-color: rgb(0, 0, 0);
+  }
+</style>
