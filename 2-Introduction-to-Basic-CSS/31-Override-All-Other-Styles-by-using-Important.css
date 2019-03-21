@@ -1,0 +1,23 @@
+/* SUMMARY STATEMENT */
+
+/* Sometimes we will use CSS libraries to style our web pages.  The downside of this is that it can overwrite our
+custom CSS.  One way to avoid this is by adding the !important keyword to our CSS that we want to override all other
+subsequent class and id declarations and inline styles. */
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  #orange-text {
+    color: orange;
+  }
+  .pink-text {
+    color: pink !important;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 id="orange-text" class="pink-text blue-text" style="color: white">Hello World!</h1>
