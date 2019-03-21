@@ -1,0 +1,23 @@
+/* SUMMARY STATEMENT */
+
+/* We can override classes with an id attribute.  Notice that we assigned an id of orange-text to the h1 element
+and left the two class attributes as well.  The text is now orange because id's always override classes, even if the classes
+are declared last in our CSS. */
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  #orange-text {
+    color: orange;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 class="pink-text blue-text" id="orange-text">Hello World!</h1>
