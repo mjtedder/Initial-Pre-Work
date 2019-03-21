@@ -1,0 +1,11 @@
+/* SUMMARY STATEMENT */
+
+/* Every HTML document has a body element.  We can prove this by changing the background-color.
+This will be important to understanding CSS Inheritance.*/
+
+<style>
+  body {
+    background-color: black;
+  }
+
+</style>
