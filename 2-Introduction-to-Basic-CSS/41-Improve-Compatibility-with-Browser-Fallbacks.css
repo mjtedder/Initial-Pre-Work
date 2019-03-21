@@ -1,0 +1,19 @@
+/* SUMMARY STATEMENT */
+
+/* Let's improve browser compatibility with fallbacks.  Internet Explorer does not support CSS variables, so when it gets
+to the variable value set for the background, it will just revert to the default value, which is never ideal when using CSS.
+To avoid this, we can declare a more widely supported value such as the background property and the red value right before we
+use the CSS variable to specify background colors. */
+
+<style>
+  :root {
+    --red-color: red;
+  }
+  .red-box {
+    background: red;
+    background: var(--red-color);
+    height: 200px;
+    width:200px;
+  }
+</style>
+<div class="red-box"></div>
