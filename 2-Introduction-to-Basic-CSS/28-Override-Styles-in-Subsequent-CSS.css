@@ -1,0 +1,21 @@
+/* SUMMARY STATEMENT */
+
+/* If we give an HTML element multiple classes, which class overrides the other?  It depends on which class is declared
+last in our CSS.  Since browsers read HTML/CSS files from top to bottom, the last class declared will be applied to the corresponding element.
+NOTE: It doesn't matter which order the classes are assigned to the HTML element. Notice that the pink-text class is assigned last
+on line 21, but the color of the text is still blue. */
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 class="blue-text pink-text">Hello World!</h1>
