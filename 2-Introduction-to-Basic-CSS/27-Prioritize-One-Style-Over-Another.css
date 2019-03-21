@@ -1,0 +1,19 @@
+/* SUMMARY STATEMENT */
+
+/* We can override the body element's styling by assigning CSS classes to our desired elements.
+In this lesson, we created a pink-text CSS class and applied it to our <h1> element.  We then selected the
+pink-text class in our CSS style declaration and assigned it a color property of pink.  Notice in the body we still
+have color assigned to green.  The CSS class selector overrides the body selector's color style declaration. */
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+
+  .pink-text {
+    color: pink;
+  }
+</style>
+<h1 class="pink-text">Hello World!</h1>
