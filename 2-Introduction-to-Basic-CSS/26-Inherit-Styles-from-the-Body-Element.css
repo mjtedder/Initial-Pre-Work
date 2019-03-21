@@ -1,0 +1,16 @@
+/* SUMMARY STATEMENT */
+
+/*The body element can be style, which will also style all other elements within the <body> tag.
+This is because of CSS Inheritance.  Since the <h1> element is inside of the document's body, it will inherit
+whatever CSS properties we add to the body selector.  In this case color and font-family. */
+
+<style>
+  body {
+    background-color: black;
+    color: green;
+    font-family: monospace;
+  }
+
+</style>
+
+<h1>Hello World</h1>
