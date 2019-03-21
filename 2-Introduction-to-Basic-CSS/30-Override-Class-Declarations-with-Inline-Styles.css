@@ -1,0 +1,23 @@
+/* SUMMARY STATEMENT */
+
+/* We can also override class declarations with inline CSS.  On line 21 we have added an inline style of color: white;
+and left the two class declarations.  The text is now white because the browser reads the inline style and overrides the two class
+selectors in our CSS. */
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  #orange-text {
+    color: orange;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 style="color: white;" id="orange-text" class="pink-text blue-text">Hello World!</h1>
