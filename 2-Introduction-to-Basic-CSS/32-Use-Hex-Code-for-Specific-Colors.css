@@ -1,0 +1,12 @@
+/* SUMMARY STATEMENT */
+
+/* We can also use hexadecimal code to specify colors in CSS.  Comprised of 6 hexadecimal digits,
+two represent Red, two represent Green, and two represent Blue components.
+
+For example, #000000 represents black and is the lowest possible value. */
+
+<style>
+  body {
+    background-color: #000000;
+  }
+</style>
