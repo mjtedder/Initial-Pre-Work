@@ -1,0 +1,27 @@
+/* SUMMARY STATEMENT */
+
+/* We can abbreviate hex codes to three digits one value for Red Green and Blue.  This limits our color count
+to approximately 4000 choices, but the browser interprets #FF0000 the same as #F00 for red. */
+
+<style>
+  .red-text {
+    color: #F00;
+  }
+  .fuchsia-text {
+    color: #F0F;
+  }
+  .cyan-text {
+    color: #0FF;
+  }
+  .green-text {
+    color: #0F0;
+  }
+</style>
+
+<h1 class="red-text">I am red!</h1>
+
+<h1 class="fuchsia-text">I am fuchsia!</h1>
+
+<h1 class="cyan-text">I am cyan!</h1>
+
+<h1 class="green-text">I am green!</h1>
