@@ -1,0 +1,47 @@
+/* SUMMARY STATEMENT */
+
+/* In addition to using pixels to specify length for in CSS, we can use relative or absolute units as well.
+
+Absolue units tie to physical units to length such as in (inches) and mm (millimeters).  Absolute length units
+approximate the actual measurement on a screen, depending on the resolution so keep this in mind when using this length unit.
+Elements may not render the same on every screen.
+
+Relative units such as em or rem are relative to another length value. Em is based on the size of an element's font, so when we use
+it to add padding to the red box, it is relative to the text of the element "padding". */
+
+<style>
+  .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+  }
+
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 20px 40px 20px 40px;
+  }
+
+  .red-box {
+    background-color: red;
+    margin: 20px 40px 20px 40px;
+    padding: 1.5em;
+    
+  }
+
+  .green-box {
+    background-color: green;
+    margin: 20px 40px 20px 40px;
+  }
+</style>
+<h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box green-box">padding</h5>
+</div>
