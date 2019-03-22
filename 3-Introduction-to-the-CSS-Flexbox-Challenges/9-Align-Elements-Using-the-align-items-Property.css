@@ -1,0 +1,29 @@
+/* Like justify-content, there is another property called align-items.  Where justify-content moves items
+along the axis, align-items lines up content on the cross-axis of a container.  For rows, the axis is horizontal
+and the cross-axis is vertical. For columns the axis is vertical and the cross-axis is horizontal.
+In this example, we aligned the items in the row of the box-container to the center of cross-axis. */
+
+<style>
+  #box-container {
+    background: gray;
+    display: flex;
+    height: 500px;
+    align-items: center;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 200px;
+    font-size: 24px;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 200px;
+    font-size: 18px;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"><p>Hello</p></div>
+  <div id="box-2"><p>Goodbye</p></div>
+</div>
