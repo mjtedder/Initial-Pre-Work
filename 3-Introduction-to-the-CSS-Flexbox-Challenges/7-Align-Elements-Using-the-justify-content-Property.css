@@ -1,0 +1,35 @@
+/* The justify content property allows us to space out flex-items in a flex-container.
+There are a few different values for aligning items:
+
+justify-content:
+- center (aligns all flex-items to the center of the container)
+- flex-start (aligns all flex-items to the start of the container, left to right for rows, and top to bottom for columns)
+- flex-end (aligns all flex-items to the end of the container, pushes content to the right for rows, and bottom to top for columns)
+- space-between (flex-items are distributed evenly in the line; first item is on the start line, last item  on the end line)
+- space-around (similar to space-between, but first and last items are not locked to the edge of the container, space is
+    distributed around all items)  */
+
+<style>
+  #box-container {
+    background: gray;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 25%;
+    height: 100%;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 25%;
+    height: 100%;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
