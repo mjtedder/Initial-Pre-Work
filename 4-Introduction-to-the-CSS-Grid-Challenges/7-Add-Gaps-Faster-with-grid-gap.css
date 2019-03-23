@@ -1,0 +1,31 @@
+/* We can use shorthand to specify space between columns and rows using the grid-gap property.  If we
+specify one value, it will create a gap between all rows and columns.  If there are two values, then the first
+value will set the gap between rows and the second will set the gap between columns. */
+
+<style>
+  .d1{background:LightSkyBlue;}
+  .d2{background:LightSalmon;}
+  .d3{background:PaleTurquoise;}
+  .d4{background:LightPink;}
+  .d5{background:PaleGreen;}
+  
+  .container {
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    /* add your code below this line */
+    grid-gap: 10px 20px;    
+    /* add your code above this line */
+  }
+</style>
+<div class="container">
+  <div class="d1">1</div>
+  <div class="d2">2</div>
+  <div class="d3">3</div>
+  <div class="d4">4</div>
+  <div class="d5">5</div>
+</div>
