@@ -1,0 +1,50 @@
+/* We can use the property grid-template-areas to group our cells into an area and give the area
+a custom name.  Most web pages have a header, footer, and content section.  To do this with CSS Grid, it would
+look like this:
+
+.container {
+    grid-template-areas:
+        "header header header header"
+        " .  content content content"
+        "footer footer footer footer"
+}
+
+The " " represent a row, and the words represent the cells.  So we have a header section that is 4 cells long.
+The . represents an empty cell, then we have three content cells on the middle row.  Finally, we have a footer
+section that is 4 cells long.
+
+*/
+
+<style>
+  .item1{background:LightSkyBlue;}
+  .item2{background:LightSalmon;}
+  .item3{background:PaleTurquoise;}
+  .item4{background:LightPink;}
+  .item5{background:PaleGreen;}
+  
+  .container {
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    /* change code below this line */
+    
+    grid-template-areas:
+      "header header header"
+      ". content content"
+      "footer footer footer";
+    /* change code above this line */
+  }
+</style>
+  
+<div class="container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+</div>
