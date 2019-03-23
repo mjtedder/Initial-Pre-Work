@@ -1,0 +1,44 @@
+/* The grid-column property is used on grid items instead of the grid container.  Think of the grid as a series of lines
+representing columns horizontally 1, 2, 3, 4, etc.  and represeting rows vertically starting from top to bottom
+1
+2
+3
+4
+
+We can use the grid-column property on an item to specify how much space we want it to take up.  We give this property two numbers
+for where the item will start and where it will stop on the column lines.
+
+*/
+
+<style>
+  .item1{background:LightSkyBlue;}
+  .item2{background:LightSalmon;}
+  .item3{background:PaleTurquoise;}
+  .item4{background:LightPink;}
+  
+  .item5 {
+    background: PaleGreen;
+    /* add your code below this line */
+    grid-column: 2 / 4;    
+    /* add your code above this line */
+  }
+  
+  .container {
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+</style>
+  
+<div class="container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+</div>
