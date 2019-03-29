@@ -21,6 +21,13 @@ SOURCE: [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Lea
 When we write HTML/CSS/JavaScript code, the browser reads it as raw bytes of data but can't really do anything with it.  The raw bytes
 of data must be converted into a form the browser understands.
 
+* Every browser has a rendering engine which processes HTML markup to build the DOM (Document Object Model) tree.
+* After HTML markup is processed, the rendering engine will process CSS markup to build the CSSOM (CSS Object Model) tree. 
+* The DOM and CSSOM trees are combined to form the render tree.
+* Render tree contains only the nodes required to render the page.
+* Layout computes the exact position and size of each object.
+* The last step is paint, which takes in the final render tree and renders the pixels to the screen.
+
 ## What code is rendered in the browser?
 
 HTML is the structure that begins with the <html> tag, and usually follows with a <head> and <body> tag.  The HTML elements are parsed by the browser's rendering engine and turned into a DOM (Document Object Model) tree.  It is a tree-like structure that made out of HTML, where each tag is a branch starting at the root element.
