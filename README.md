@@ -74,12 +74,17 @@ SOURCE: [Stack Overflow](https://stackoverflow.com/questions/3900549/what-is-run
 
 ## How many instances of the client-side assets (HTML, CSS, JS, Images, etc.) are created?
 
-
+It depends on the website, but usually one instance of HTML is created, and multiple instances of CSS, JS, and Images are created.  An instance is just another name for object.  So if a JavaScript file has multiple functions, these can all be considered instances?  I had trouble researching this.
 
 ## How many instances of the server-side code are available at any given time?
 
-put your answer here
+This can change depending on the given amount of ports specified?  I want to say there is at least two instances of server-side code: The code connecting to the server, and the code used to run the application.  I believe this is changing and there are ways to run more
+instances of server code.  I will continue to reasearch instances and would like to learn more about it in the academy.
 
 ## How many instances of the databases connected to the server application are created?
 
-put your answer here
+In general, a database instance describes a complete database environment, including the RDBMS software, table structure, stored procedures, and other functionality. Database administrators might create multiple instances of the same database for different purposes.
+
+For example, an organization with an employees database might have three different instances: production (used to contain live data), pre-production (used to test new functionality prior to release into production) and development (used by database developers to create new functionality).
+
+SOURCE: [LifeWire](https://www.lifewire.com/database-instance-1019612)</br>
